@@ -1,0 +1,483 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Bokegui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+Bokegui.Name = "Bokegui"
+Bokegui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Bokegui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Bokegui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(226, 4, 255)
+Frame.BorderSizePixel = 4
+Frame.Position = UDim2.new(0.752192974, 0, 0.325227976, 0)
+Frame.Size = UDim2.new(0, 259, 0, 333)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderColor3 = Color3.fromRGB(226, 4, 255)
+Frame_2.BorderSizePixel = 4
+Frame_2.Position = UDim2.new(-0.000702729099, 0, -0.12822552, 0)
+Frame_2.Size = UDim2.new(0, 259, 0, 42)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.0614035465, 0)
+TextLabel.Size = UDim2.new(0, 259, 0, 40)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "BokeGui by Bokey_CultStarter aka Charlielovesdad22"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderColor3 = Color3.fromRGB(226, 4, 255)
+Frame_3.BorderSizePixel = 4
+Frame_3.Position = UDim2.new(-0.730432451, 0, 0.475378096, 0)
+Frame_3.Size = UDim2.new(0, 158, 0, 161)
+
+Frame_4.Parent = Frame_3
+Frame_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderColor3 = Color3.fromRGB(226, 4, 255)
+Frame_4.BorderSizePixel = 4
+Frame_4.Position = UDim2.new(-0.00177774555, 0, -0.125334367, 0)
+Frame_4.Size = UDim2.new(0, 158, 0, 20)
+
+TextLabel_2.Parent = Frame_4
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.0613983162, 0)
+TextLabel_2.Size = UDim2.new(0, 158, 0, 18)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Extra Stuff"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextWrapped = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(-0.119691119, 0, -0.363363355, 0)
+ImageLabel.Rotation = -7.000
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.ZIndex = 0
+ImageLabel.Image = "rbxassetid://106391438353978"
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.0189216323, 0)
+ScrollingFrame.Size = UDim2.new(0, 258, 0, 326)
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(226, 4, 255)
+TextButton.BorderSizePixel = 4
+TextButton.Size = UDim2.new(0, 258, 0, 23)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "china music"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = ScrollingFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_2.BorderSizePixel = 4
+TextButton_2.Position = UDim2.new(0, 0, 0.0690690726, 0)
+TextButton_2.Size = UDim2.new(0, 258, 0, 23)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Skybox Troll"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_2.TextStrokeTransparency = 0.000
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = ScrollingFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_3.BorderSizePixel = 4
+TextButton_3.Size = UDim2.new(0, 258, 0, 23)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "indian music"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_3.TextStrokeTransparency = 0.000
+TextButton_3.TextWrapped = true
+
+TextButton_4.Parent = ScrollingFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_4.BorderSizePixel = 4
+TextButton_4.Size = UDim2.new(0, 258, 0, 23)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "decal all"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_4.TextStrokeTransparency = 0.000
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = ScrollingFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_5.BorderSizePixel = 4
+TextButton_5.Position = UDim2.new(0, 0, 0.0690690726, 0)
+TextButton_5.Size = UDim2.new(0, 258, 0, 23)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "let em know"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_5.TextStrokeTransparency = 0.000
+TextButton_5.TextWrapped = true
+
+TextButton_6.Parent = ScrollingFrame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_6.BorderSizePixel = 4
+TextButton_6.Position = UDim2.new(0, 0, 0.0690690726, 0)
+TextButton_6.Size = UDim2.new(0, 258, 0, 23)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "bokeify"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14.000
+TextButton_6.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_6.TextStrokeTransparency = 0.000
+TextButton_6.TextWrapped = true
+
+TextButton_7.Parent = ScrollingFrame
+TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BorderColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_7.BorderSizePixel = 4
+TextButton_7.Position = UDim2.new(0, 0, 0.0690690726, 0)
+TextButton_7.Size = UDim2.new(0, 258, 0, 23)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "chat spam"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_7.TextStrokeTransparency = 0.000
+TextButton_7.TextWrapped = true
+
+TextButton_8.Parent = ScrollingFrame
+TextButton_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_8.BorderSizePixel = 4
+TextButton_8.Position = UDim2.new(0, 0, 0.0690690726, 0)
+TextButton_8.Size = UDim2.new(0, 258, 0, 23)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "Highlight Everything"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14.000
+TextButton_8.TextStrokeColor3 = Color3.fromRGB(226, 4, 255)
+TextButton_8.TextStrokeTransparency = 0.000
+TextButton_8.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = Bokegui
+UIAspectRatioConstraint.AspectRatio = 2.079
+
+-- Scripts:
+
+local function KSLQR_fake_script() -- Frame.DragScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	--Put this inside of your Frame and configure the speed if you would like.
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(KSLQR_fake_script)()
+local function DEKHBXQ_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+		local sound = Instance.new("Sound",workspace)
+		sound.Name = 'China go brr'
+	    sound.SoundId = "rbxassetid://109469288008880"
+		sound.Looped = true
+		sound.Volume = 4
+		sound.Pitch = 0.1
+		sound:Play()
+	end)
+end
+coroutine.wrap(DEKHBXQ_fake_script)()
+local function JAVASB_fake_script() -- TextButton_2.Script 
+	local script = Instance.new('Script', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local texturelol = "rbxassetid://106391438353978"
+		local s = Instance.new("Sky",game:GetService("Lighting"))
+		s.SkyboxBk = texturelol
+		s.SkyboxDn = texturelol
+		s.SkyboxFt = texturelol
+		s.SkyboxLf = texturelol
+		s.SkyboxRt = texturelol
+		s.SkyboxUp = texturelol
+	
+		local sound = Instance.new("Sound",workspace)
+		sound.Name = 'Team Bokey destroyed ur game lol'
+		sound.SoundId = "rbxassetid://113568851878579"
+		sound.Looped = true
+		sound.Volume = 4
+		sound.Pitch = 0.2
+		sound:Play()
+	
+		local basics = {Color3.new(255/255,0/255,0/255),Color3.new(255/255,85/255,0/255),Color3.new(218/255,218/255,0/255),Color3.new(0/255,190/255,0/255),Color3.new(0/255,85/255,255/255),Color3.new(0/255,0/255,127/255),Color3.new(170/255,0/255,255/255),Color3.new(0/255,204/255,204/255),Color3.new(255/255,85/255,127/255),Color3.new(0/255,0/255,0/255),Color3.new(255/255,255/255,255/255)}
+		game.Lighting.FogStart = 25
+		game.Lighting.FogEnd = 300
+		game.Lighting.Ambient = basics[math.random(1,#basics)]
+		while true do
+			wait(0.5)
+			game.Lighting.FogColor = basics[math.random(1,#basics)]
+		end
+	end)
+end
+coroutine.wrap(JAVASB_fake_script)()
+local function RUOLDWK_fake_script() -- TextButton_4.Script 
+	local script = Instance.new('Script', TextButton_4)
+
+	-- ServerScript inside the button
+	local remote = script.Parent:WaitForChild("PlaceMapDecals")
+	
+	local DECAL_ID = "rbxassetid://106391438353978"
+	
+	local faces = {
+		Enum.NormalId.Front,
+		Enum.NormalId.Back,
+		Enum.NormalId.Top,
+		Enum.NormalId.Bottom,
+		Enum.NormalId.Left,
+		Enum.NormalId.Right
+	}
+	
+	remote.OnServerEvent:Connect(function(player)
+		for _, part in ipairs(workspace:GetDescendants()) do
+			if part:IsA("BasePart") and part.Transparency < 1 then
+				for _, face in ipairs(faces) do
+					local decalName = face.Name .. "_Decal"
+					if not part:FindFirstChild(decalName) then
+						local decal = Instance.new("Decal")
+						decal.Name = decalName
+						decal.Face = face
+						decal.Texture = DECAL_ID
+						decal.Parent = part
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(RUOLDWK_fake_script)()
+local function RDRD_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	-- LocalScript inside the button
+	local remote = script.Parent:WaitForChild("PlaceMapDecals")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		remote:FireServer()
+	end)
+end
+coroutine.wrap(RDRD_fake_script)()
+local function JBRN_fake_script() -- TextButton_5.Script 
+	local script = Instance.new('Script', TextButton_5)
+
+	-- ServerScript inside HintButton
+	local Players = game:GetService("Players")
+	local remote = script.Parent:WaitForChild("ShowHint")
+	
+	local hintShown = false
+	
+	local function createHint(player)
+		local gui = player:FindFirstChild("PlayerGui")
+		if not gui then return end
+		if gui:FindFirstChild("TopHint") then return end
+	
+		local screenGui = Instance.new("ScreenGui")
+		screenGui.Name = "TopHint"
+		screenGui.ResetOnSpawn = false
+		screenGui.Parent = gui
+	
+		local textLabel = Instance.new("TextLabel")
+		textLabel.Name = "HintLabel"
+		textLabel.Size = UDim2.new(1, 0, 0, 50)
+		textLabel.Position = UDim2.new(0, 0, 0, 0)
+		textLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+		textLabel.TextColor3 = Color3.new(1, 1, 1)
+		textLabel.Font = Enum.Font.ArialBold
+		textLabel.TextSize = 24
+		textLabel.Text = "screw you"
+		textLabel.BorderSizePixel = 0
+		textLabel.BackgroundTransparency = 0
+		textLabel.TextStrokeTransparency = 0.7
+		textLabel.Parent = screenGui
+	end
+	
+	-- Button clicked
+	remote.OnServerEvent:Connect(function()
+		if hintShown then return end
+		hintShown = true
+	
+		for _, player in pairs(Players:GetPlayers()) do
+			createHint(player)
+		end
+	end)
+	
+	-- For new players who join later
+	Players.PlayerAdded:Connect(function(player)
+		player.CharacterAdded:Wait()
+		if hintShown then
+			task.delay(1, function()
+				createHint(player)
+			end)
+		end
+	end)
+end
+coroutine.wrap(JBRN_fake_script)()
+local function ENQPYC_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	-- LocalScript inside HintButton
+	local remote = script.Parent:WaitForChild("ShowHint")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		remote:FireServer()
+	end)
+end
+coroutine.wrap(ENQPYC_fake_script)()
+local function BOQUL_fake_script() -- TextButton_6.Script 
+	local script = Instance.new('Script', TextButton_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game:GetService("Players")
+		local function r(c)
+			task.wait(1) if not c then return end
+			for _,v in pairs(c:GetChildren()) do 
+				if v:IsA("Accessory") or v:IsA("Shirt") or v:IsA("Pants") or v:IsA("CharacterAppearance") or v:IsA("BodyColors") then v:Destroy() end
+			end
+			local f = c:FindFirstChild("Head") and c.Head:FindFirstChildOfClass("Decal") if f then f.Texture = "rbxassetid://72672223439434" end
+			local s = Instance.new("Shirt",c) s.ShirtTemplate = "http://www.roblox.com/asset/?id=73336831221889"
+		end
+		for _,v in pairs(p:GetPlayers()) do if v.Character then r(v.Character) end v.CharacterAdded:Connect(r) end
+		p.PlayerAdded:Connect(function(v) v.CharacterAdded:Connect(r) end)
+	end)
+	
+end
+coroutine.wrap(BOQUL_fake_script)()
+local function ZAHKRDQ_fake_script() -- TextButton_7.Script 
+	local script = Instance.new('Script', TextButton_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local chat = game:GetService("Chat")
+	
+		while true do
+			for _, player in pairs(game.Players:GetPlayers()) do
+				chat:Chat(player.Character, "TEAM BOKEY HAHAHAHA", Enum.ChatColor.White)
+			end
+			task.wait(0.1)
+		end
+	
+	end)
+end
+coroutine.wrap(ZAHKRDQ_fake_script)()
+local function QIXQRXA_fake_script() -- TextButton_8.Script 
+	local script = Instance.new('Script', TextButton_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local highlight = Instance.new("Highlight")
+		highlight.FillColor = Color3.fromRGB(0, 0, 0)
+		highlight.OutlineColor = Color3.fromRGB(226, 4, 255)
+		highlight.Parent = game.Workspace
+	end)
+	
+end
+coroutine.wrap(QIXQRXA_fake_script)()
